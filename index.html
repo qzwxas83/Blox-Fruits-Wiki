@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <title>Blox Fruits Wiki</title>
+</head>
+<body>
+    <header>
+        <img align="left" src="./img/logo/Blox_Fruits.png">
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item"><a class="top" href="#">Fruits</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('common')">Common</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('uncommon')">Uncommon</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('rare')">Rare</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('leg')">Legendary</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('mythic')">Mythic</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="top" href="#">Bosses</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('first_sea_1')">First Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('second_sea_1')">Second Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('third_sea_1')">Third Sea</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="top" href="#">Swords</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('first_sea_2')">First Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('second_sea_2')">Second Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('third_sea_2')">Third Sea</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="top" href="#">Guns</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('first_sea_3')">First Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('second_sea_3')">Second Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('third_sea_3')">Third Sea</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="top" href="#">Fight styles</a>
+                    <ul class="dropdown">
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('first_sea_4')">First Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('second_sea_4')">Second Sea</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('third_sea_4')">Third Sea</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="top" href="#">Other</a>
+                    <ul class="dropdown">
+                        <li><a target="_blank" href="https://qzwxas83.github.io/Hello-Neighbor/">Hello Neighbor wiki</a></li>
+                        <li><a target="_blank" href="https://qzwxas83.github.io/Hello-Neighbor-2/">Hello Neighbor 2 wiki</a></li>
+                        <li><a target="_blank" href="https://qzwxas83.github.io/Minecraft/">Minecraft wiki</a></li>
+                        <li><a target="_blank" href="https://qzwxas83.github.io/Toilet-Tower-Defense-Units/">Toilet Tower Defense Units</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button class="toggle_theme" id="theme-toggle-btn">Toggle Theme</button>
+    </header>
+    <div class="fruits">
+        <h1 class="title">Fruits</h1>
+        <div class="common" id="common">
+            <h2 class="title-2">Common</h2>
+            <div class="images">
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/blox-fruits/images/a/a0/RocketB.png/revision/latest/scale-to-width-down/110?cb=20231027203217&path-prefix=ru">
+                    <div class="name">Rocket</div>
+                </div>
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/dc/SpinFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120258">
+                    <div class="name">Spin</div>
+                </div>
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/51/ChopFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115331">
+                    <div class="name">Chop</div>
+                </div>
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/46/SpringFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120418">
+                    <div class="name">Spring</div>
+                </div>
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/7d/BombFruit.png/revision/latest/scale-to-width-down/110?cb=20240304195914">
+                    <div class="name">Bomb</div>
+                </div>
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/68/SmokeFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120224">
+                    <div class="name">Smoke</div>
+                </div>    
+                <div class="img-common">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/2d/SpikeFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120251">
+                    <div class="name">Spike</div>
+                </div>
+            </div>
+        </div>
+        <div class="uncommon" id="uncommon">
+            <h2 class="title-2">Uncommon</h2>
+            <div class="images">
+                <div class="img-uncommon">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/b/b8/FlameFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115537">
+                    <div class="name-2">Flame</div>
+                </div>
+                <div class="img-uncommon">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/7d/FalconFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115527">
+                    <div class="name-2">Falcon</div>
+                </div>
+                <div class="img-uncommon">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/74/IceFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115604">
+                    <div class="name-2">Ice</div>
+                </div>
+                <div class="img-uncommon">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/55/SandFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120103">
+                    <div class="name-2">Sand</div>
+                </div>
+                <div class="img-uncommon">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/c2/DarkFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115358">
+                    <div class="name-2">Dark</div>
+                </div>
+                <div class="img-uncommon">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/6d/DiamondFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115405">
+                    <div class="name-2">Diamond</div>
+                </div>
+            </div>
+        </div>
+        <div class="rare" id="rare">
+            <h2 class="title-2">Rare</h2>
+            <div class="images">
+                <div class="img-rare">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/f/f8/LightFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115623">
+                    <div class="name-3">Light</div>
+                </div>
+                <div class="img-rare">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/b/bc/RubberFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120046">
+                    <div class="name-3">Rubber</div>
+                </div>
+                <div class="img-rare">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/0/0a/BarrierFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115304">
+                    <div class="name-3">Barrier</div>
+                </div>
+                <div class="img-rare">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/4e/GhostFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115804">
+                    <div class="name-3">Ghost</div>
+                </div>
+                <div class="img-rare">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/73/MagmaFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115640">
+                    <div class="name-3">Magma</div>
+                </div>
+            </div>
+        </div>
+        <div class="leg" id="leg">
+            <h2 class="title-2">Legendary</h2>
+            <div class="images">
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/23/QuakeFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115754">
+                    <div class="name-4">Quake</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/6e/BuddhaFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115325">
+                    <div class="name-4">Buddha</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/5a/LoveFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115630">
+                    <div class="name-4">Love</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/82/SpiderFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120241">
+                    <div class="name-4">Spider</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/f/f4/SoundFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120231">
+                    <div class="name-4">Sound</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/1/11/PhoenixFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115733">
+                    <div class="name-4">Phoenix</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/e/e4/PortalFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115746">
+                    <div class="name-4">Portal</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/89/RumbleFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120057">
+                    <div class="name-4">Rumble</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/3/3f/PainFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115724">
+                    <div class="name-4">Pain</div>
+                </div>
+                <div class="img-leg">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/de/BlizzardFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115313">
+                    <div class="name-4">Blizzard</div>
+                </div>
+            </div>
+        </div>
+        <div class="mythic" id="mythic">
+            <h2 class="title-2">Mythic</h2>
+            <div class="images">
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/22/GravityFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115548">
+                    <div class="name-5">Gravity</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/d3/MammothFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115702">
+                    <div class="name-5">Mammoth</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/e/ea/T-RexFruit.png/revision/latest/scale-to-width-down/350?cb=20231226191220">
+                    <div class="name-5">T-Rex</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/9/9f/DoughFruit.png/revision/latest/scale-to-width-down/110?cb=20231210155057">
+                    <div class="name-5">Dough</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/2d/ShadowFruit.png/revision/latest/scale-to-width-down/110?cb=20231102204401">
+                    <div class="name-5">Shadow</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/b/b7/VenomFruit.png/revision/latest/scale-to-width-down/110?cb=20231027120425">
+                    <div class="name-5">Venom</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/0/01/ControlFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115345">
+                    <div class="name-5">Conrol</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/0/02/SpiritFruit.png/revision/latest/scale-to-width-down/110?cb=20240304190559">
+                    <div class="name-5">Spirit</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/43/DragonFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115513">
+                    <div class="name-5">Dragon</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/8c/LeopardFruit.png/revision/latest/scale-to-width-down/110?cb=20231027115615">
+                    <div class="name-5">Leopard</div>
+                </div>
+                <div class="img-mythic">
+                    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/c3/KitsuneFruit.png/revision/latest/scale-to-width-down/110?cb=20240125143322">
+                    <div class="name-5">Kitsune</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
