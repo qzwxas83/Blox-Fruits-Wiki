@@ -6,13 +6,15 @@
 * {
     margin: 0;
     padding: 0;
-    transition: all 0.3s ease;
 }
 
 body {
-    background: black;
+    background-image: url(img/Blox-Fruit-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
     color: white;
-    padding-top: 80px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,46 +102,15 @@ header {
     height: 50pt;
 }
 
-.dark-mode {
+.content {
     background: black;
     color: white;
-}
-
-.light-mode {
-    background: #FFFFFF;
-    color: #000;
-}
-
-.toggle_theme {
-    position: absolute;
-    right: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-family: 'BigSoftie';
-    font-size: 25px;
-    text-transform: uppercase;
-    border: none;
-    background-color: #008cff;
-    color: white;
-    text-shadow: 2px 2px black,  
-                 2px 2px black,
-                 2px 2px black,
-                 2px 2px black;
-}
-
-.common {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: auto;
 }
 
 .title {
     font-family: 'BigSoftie';
     font-size: 60px;
     margin-bottom: 20px;
-    margin-top: 20px;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -151,7 +122,6 @@ header {
     font-family: 'BigSoftie';
     font-size: 40px;
     margin-bottom: 20px;
-    margin-top: 20px;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -172,8 +142,8 @@ header {
 
 .img-common {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     overflow: hidden;
     background: #797979;
@@ -188,8 +158,8 @@ header {
 
 .img-uncommon {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     overflow: hidden;
     background: #3e5e8e;
@@ -204,8 +174,8 @@ header {
 
 .img-rare {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     overflow: hidden;
     background: #911d9b;
@@ -220,8 +190,8 @@ header {
 
 .img-leg {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     overflow: hidden;
     background: #5e37ac;
@@ -236,14 +206,30 @@ header {
 
 .img-mythic {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     overflow: hidden;
     background: #ba2527;
     border: 6px solid #ee2f32;
     margin: 10px;
     box-shadow: #7d1517 0px 5px 0, #ba25275e 0px 0px 5px 5px, #ba252799 0px 0px 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.img-boss {
+    position: relative;
+    width: 110px;
+    height: 140px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #232225;
+    border: 4px solid #d8b74d;
+    margin: 10px;
+    box-shadow: #85712f 0px 5px 0, #d8b74d55 0px 0px 5px 5px, #665624 0px 0px 10px 5px;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +247,17 @@ header {
 
 }
 
-.img-common:hover, .img-uncommon:hover, .img-rare:hover, .img-leg:hover, .img-mythic:hover {
+.img-boss img {
+    width: 95%;
+    height: 95%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.img-common:hover, .img-uncommon:hover, .img-rare:hover, .img-leg:hover, .img-mythic:hover, .img-boss:hover {
     transform: scale(1.1);
 }
 
@@ -274,7 +270,7 @@ header {
     text-align: center;
     font-family: rubik, helvetica, arial, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     padding: 5px 0;
     text-shadow: 1px -1px 1px black,
                 -1px -1px 1px black,
@@ -292,7 +288,7 @@ header {
     text-align: center;
     font-family: rubik, helvetica, arial, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     padding: 5px 0;
     text-shadow: 1px -1px 1px black,
                 -1px -1px 1px black,
@@ -310,7 +306,7 @@ header {
     text-align: center;
     font-family: rubik, helvetica, arial, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     padding: 5px 0;
     text-shadow: 1px -1px 1px black,
                 -1px -1px 1px black,
@@ -328,7 +324,7 @@ header {
     text-align: center;
     font-family: rubik, helvetica, arial, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     padding: 5px 0;
     text-shadow: 1px -1px 1px black,
                 -1px -1px 1px black,
@@ -346,7 +342,25 @@ header {
     text-align: center;
     font-family: rubik, helvetica, arial, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
+    padding: 5px 0;
+    text-shadow: 1px -1px 1px black,
+                -1px -1px 1px black,
+                1px 1px 1px black,
+                -1px 1px 1px black,
+                    0 0 2px black;
+}
+
+.name-boss {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #00000078;
+    color: #b4930b;
+    text-align: center;
+    font-family: rubik, helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
     padding: 5px 0;
     text-shadow: 1px -1px 1px black,
                 -1px -1px 1px black,
