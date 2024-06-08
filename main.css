@@ -194,10 +194,10 @@ header {
     height: 100px;
     border-radius: 10px;
     overflow: hidden;
-    background: #5e37ac;
-    border: 6px solid #d52be4;
+    background: #911d9b;
+    border: 6px solid #8c52ff;
     margin: 10px;
-    box-shadow: #4a0f53 0px 5px 0;
+    box-shadow: #301d5a 0px 5px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,6 +236,86 @@ header {
     transition: transform 0.3s ease;
 }
 
+.img-common-sword {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #797979;
+    border: 6px solid #b3b3b3;
+    margin: 10px;
+    box-shadow: #3d3e3e 0px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.img-uncommon-sword {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #3e5e8e;
+    border: 6px solid #5c8cd3;
+    margin: 10px;
+    box-shadow: #1e324a 0px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.img-rare-sword {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #5e37ac;
+    border: 6px solid #d52be4;
+    margin: 10px;
+    box-shadow: #4a0f53 0px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.img-leg-sword {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #911d9b;
+    border: 6px solid #8c52ff;
+    margin: 10px;
+    box-shadow: #301d5a 0px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.img-mythic-sword {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ba2527;
+    border: 6px solid #ee2f32;
+    margin: 10px;
+    box-shadow: #7d1517 0px 5px 0, #ba25275e 0px 0px 5px 5px, #ba252799 0px 0px 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
 .img-common img, .img-uncommon img, .img-rare img, .img-leg img, .img-mythic img {
     width: 85%;
     height: 85%;
@@ -244,7 +324,6 @@ header {
     object-fit: contain;
     display: block;
     margin: auto;
-
 }
 
 .img-boss img {
@@ -257,7 +336,19 @@ header {
     margin: auto;
 }
 
-.img-common:hover, .img-uncommon:hover, .img-rare:hover, .img-leg:hover, .img-mythic:hover, .img-boss:hover {
+.img-common-sword img, .img-uncommon-sword img, .img-rare-sword img, .img-leg-sword img, .img-mythic-sword img {
+    width: 110%;
+    height: 110%;
+    max-width: 110%;
+    max-height: 110%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+
+
+.img-common:hover, .img-uncommon:hover, .img-rare:hover, .img-leg:hover, .img-mythic:hover, .img-boss:hover, .img-common-sword:hover, .img-uncommon-sword:hover, .img-rare-sword:hover, .img-leg-sword:hover, .img-mythic-sword:hover {
     transform: scale(1.1);
 }
 
@@ -352,6 +443,24 @@ header {
 }
 
 .name-boss {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #00000078;
+    color: #b4930b;
+    text-align: center;
+    font-family: rubik, helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 0;
+    text-shadow: 1px -1px 1px black,
+                -1px -1px 1px black,
+                1px 1px 1px black,
+                -1px 1px 1px black,
+                    0 0 2px black;
+}
+
+.name-sword {
     position: absolute;
     bottom: 0;
     width: 100%;
